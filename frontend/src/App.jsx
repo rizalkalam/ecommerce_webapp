@@ -1,6 +1,7 @@
 import './App.css';
 import cartIcon from './assets/cart.png';
 import userIcon from './assets/user.png';
+import starVector from './assets/vct_star.png';
 import section1Preview from './assets/section1-preview.png';
 import preview from './assets/preview.png';
 import { Icon } from '@iconify/react';
@@ -74,12 +75,18 @@ export default function App() {
             </div>
         </div>
         <div className="right-section-1">
+            <img className="star star-top-left" src={starVector} alt="" srcset="" />
+            <img className="star star-bottom-right" src={starVector} alt="" srcset="" />
             {/* <img src={preview} alt="Section 1 Preview" /> */}
         </div>
       </div>
 
       <div className="banner-brand">
-        <h1>hai</h1>
+        <p>VERSACE</p>
+        <p>ZARA</p>
+        <p>GUCCI</p>
+        <p>PRADA</p>
+        <p>Calivn Clein</p>
       </div>
     </>
   );
