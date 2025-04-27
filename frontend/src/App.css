@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Helvetica", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #ffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.left p {
+  font-size: 26px;
+  font-weight: 900;
+  color: #000000;
+}
+
+.left ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.left ul li a {
+  text-decoration: none;
+  color: #606060;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.left ul li a:hover {
+  color: #000000;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 30px;
+  padding: 15px 16px;
+  width: 600px;
+}
+
+.search-bar svg {
+  color: #000000;
+  margin: 0 16px 0 16px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #606060;
+}
+
+.auth-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.auth-content svg {
+  color: #000000;
+  cursor: pointer;
+}
+
+/* body styling */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #f2f0f1;
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: 1; /* Places the image behind other content */
+}
+
+/* You can add your content div here */
+.content {
+  position: relative;
+  width: 50%;
+  padding-top: 130px;
+  padding-left: 160px;
+  z-index: 2; /* Add other styling as needed */
+}
+
+.first-p p {
+  color: #1e1e1e;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px; /* Changed from margin: 192px 0 30px 0 */
+  max-width: 450px;
+}
+
+.content > p {
+  color: #666;
+  font-size: 1.6;
+  margin-bottom: 16px;
+  max-width: 450px;
+}
+
+.button-shop {
+  padding: 16px 48px;
+  margin: 10px 0 0 0;
+  background-color: #000000;
+  border-radius: 36px;
+}
+
+.button-shop a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 16px;
+}
+
+.button-shop:hover {
+  background-color: #1e1e1e;
+}
+
+.button-shop a:hover {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.rating {
+  display: flex;
+  margin-top: 56px;
+  gap: 40px;
+}
+
+.rating-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-number {
+  font-size: 40px;
+  font-weight: 400;
+  color: #1e1e1e;
+  margin-bottom: 5px;
+}
+
+.rating-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.brands {
+  width: 100%;
+  background-color: #000000;
+  padding: 34px 0;
+  position: absolute; /* Make it absolute to position it over other elements */
+  z-index: 10; /* Keep high z-index to stay on top */
+  bottom: -128px; /* Position at the bottom of the container */
+  left: 0;
+}
+
+.brands-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px; /* Add padding to match your layout */
+}
+
+.brand-logo {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  font-family: serif;
+}
+
+/* Specific styling for Calvin Klein which uses a different font */
+.brand-logo:nth-child(5) {
+  font-family: "Helvetica", sans-serif;
+}
