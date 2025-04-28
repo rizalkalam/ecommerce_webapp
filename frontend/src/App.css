@@ -12,88 +12,12 @@
 }
 
 p {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 500;
   color: #333;
 }
 
-nav {
-  background: #ffff;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-nav .wrapper-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 90px;
-}
-
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 48;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 48px;
-}
-
-.nav-links ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 48px;
-}
-
-.nav-links li {
-  list-style: none;
-}
-
-.nav-links li a {
-  list-style: none;
-  text-decoration: none;
-  color: #333;
-}
-
-.search-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2px;
-  padding: 8px 20px;
-  width: 500px;
-}
-
-.con-search-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2px;
-  padding: 8px 20px;
-}
-
-.search-input {
-  border: none;
-  background: transparent;
-  outline: none;
-  font-size: 14px;
-  width: 100%;
-}
-
-.auth-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-
+/* signup banner css */
 .signup-banner {
   background: #000;
   color: #fff;
@@ -127,12 +51,93 @@ nav .wrapper-nav {
 }
 
 .signup-banner a {
-  text-decoration: none;
   color: #fff;
 }
 
-/* body styling ( section-1 )*/
+.signup-banner a:hover {
+  color: rgb(57, 57, 143);
+}
 
+/* navbar css */
+nav {
+  z-index: 100;
+  top: 0;
+  position: sticky;
+  background: #ffffff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+nav .wrapper-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 90px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.nav-right {
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  display: flex;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  list-style: none;
+  color: #333;
+  font-size: 17px;
+}
+.nav-links li a:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.search-bar {
+  background: #f0f0f0;
+  border-radius: 50px;
+  width: 580px;
+}
+
+.con-search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+  padding: 16px 24px;
+}
+
+.search-input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.auth-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* body css */
 .section-1 {
   display: flex;
   align-items: center;
@@ -165,106 +170,74 @@ nav .wrapper-nav {
   margin-top: 20px;
   cursor: pointer;
 }
-
-/* You can add your content div here */
-.content {
-  position: relative;
-  width: 50%;
-  padding-top: 130px;
-  padding-left: 160px;
-  z-index: 2; /* Add other styling as needed */
+.left-section-1 button:hover {
+  background-color: #383737;
 }
 
-.first-p p {
-  color: #1e1e1e;
-  font-size: 50px;
-  font-weight: 900;
-  line-height: 1.2;
-  letter-spacing: -0.5px;
-  margin-bottom: 8px; /* Changed from margin: 192px 0 30px 0 */
-  max-width: 450px;
-}
-
-.content > p {
-  color: #666;
-  font-size: 1.6;
-  margin-bottom: 16px;
-  max-width: 450px;
-}
-
-.button-shop {
-  padding: 16px 48px;
-  margin: 10px 0 0 0;
-  background-color: #000000;
-  border-radius: 36px;
-}
-
-.button-shop a {
-  text-decoration: none;
-  color: #f0f0f0;
-  font-size: 16px;
-}
-
-.button-shop:hover {
-  background-color: #1e1e1e;
-}
-
-.button-shop a:hover {
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.rating {
+.con-testi-section-1 {
   display: flex;
-  margin-top: 56px;
-  gap: 40px;
+  align-items: center;
+  gap: 32px;
+  margin-top: 48px;
 }
 
-.rating-item {
-  display: flex;
-  flex-direction: column;
+.testi-section-1-title {
+  font-size: 38px;
+  font-weight: bold;
+  color: #333;
 }
 
-.rating-number {
-  font-size: 40px;
-  font-weight: 400;
-  color: #1e1e1e;
-  margin-bottom: 5px;
-}
-
-.rating-text {
+.testi-section-1-desc {
   font-size: 14px;
   color: #666;
 }
 
-.brands {
-  width: 100%;
-  background-color: #000000;
-  padding: 34px 0;
-  position: absolute; /* Make it absolute to position it over other elements */
-  z-index: 10; /* Keep high z-index to stay on top */
-  bottom: -128px; /* Position at the bottom of the container */
-  left: 0;
+.testi-separator {
+  width: 2px;
+  height: 58px;
+  background: #e0e0e0;
 }
 
-.brands-container {
-  max-width: 1200px;
-  margin: 0 auto;
+.right-section-1 {
+  width: 50%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 80px; /* Add padding to match your layout */
+  justify-content: flex-end;
+  background-image: url("./Assets/bg-2-ppll.png");
+  background-size: 42%;
+  background-repeat: no-repeat;
+  background-position: right 60px top 90px;
+  background-attachment: fixed; /* Parallax effect */
+  min-height: 600px;
 }
 
-.brand-logo {
-  color: white;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-  font-family: serif;
+.star-top-left {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 430px;
+  left: 55%;
 }
 
-/* Specific styling for Calvin Klein which uses a different font */
-.brand-logo:nth-child(5) {
-  font-family: "Helvetica", sans-serif;
+.star-bottom-right {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  bottom: 535px;
+  right: 5%;
+}
+
+.banner-brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 110px;
+  background-color: #000;
+  width: 100%;
+}
+
+.banner-brand p {
+  color: #fff;
+  font-size: 30px;
 }

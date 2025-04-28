@@ -1,19 +1,19 @@
 import "./App.css";
-import React, { useState } from "react";
 import { Icon } from "@iconify/react";
-import backgroundImg from "./Assets/bg.png";
+import starVector from "./Assets/Vector.png";
+import { useState } from "react";
 
 export default function App() {
   const [showBanner, setShowBanner] = useState(true);
 
   return (
     <>
-      {/* banner */}
+      {/* section before nav */}
       {showBanner && (
         <div className="signup-banner">
           <div className="con-left-signup-banner"></div>
           <div className="con-signup-banner">
-            <span>Sign up and get 20% off to your first order.</span>
+            <span>Sign up and get 20% off to yout first order.</span>
             <a href="">Sign Up Now</a>
           </div>
           <button className="banner-close" onClick={() => setShowBanner(false)}>
@@ -21,11 +21,12 @@ export default function App() {
           </button>
         </div>
       )}
+      {/* section before nav end */}
 
+      {/* navbar start  */}
       <nav>
         <div className="wrapper-nav">
-          {/* nav left  start */}
-          <div className="nav left">
+          <div className="nav-left">
             <p className="logo">SHOP.CO</p>
             <div className="nav-links">
               <ul>
@@ -36,7 +37,7 @@ export default function App() {
                   <a href="">On Sale</a>
                 </li>
                 <li>
-                  <a href="">New Arrival</a>
+                  <a href="">New Arrivals</a>
                 </li>
                 <li>
                   <a href="">Brands</a>
@@ -44,76 +45,85 @@ export default function App() {
               </ul>
             </div>
           </div>
-          {/* nav left end */}
-
-          {/* nav right start */}
           <div className="nav-right">
-            <form action="" className="search-bar">
+            <form className="search-bar">
               <div className="con-search-bar">
-                <Icon
-                  icon="bitcoin-icons:search-filled"
-                  width="30"
-                  height="30"
-                  style={{ color: "#848484" }}
-                />
+                <Icon icon="ic:twotone-search" width="30" height="30" />
                 <input
                   type="text"
-                  placeholder="Search for product..."
+                  placeholder="Search for products..."
                   className="search-input"
                 />
               </div>
             </form>
             <div className="auth-content">
-              <div className="cart">
-                <Icon icon="proicons:cart" width="24" height="24" />
-              </div>
-              <div className="user">
-                <Icon icon="qlementine-icons:user-16" width="24" height="24" />
-              </div>
+              <Icon icon="fluent:cart-24-regular" width="30" height="30" />
+              <Icon icon="iconamoon:profile-circle" width="30" height="30" />
             </div>
           </div>
-          {/* nav right end */}
         </div>
       </nav>
+      {/* navbar end  */}
 
-      {/* body */}
+      {/* body start */}
       <div className="section-1">
+        {/* Bagian kiri section-1 */}
         <div className="left-section-1">
           <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-          <p className="section-1-p">
+          <p className="section-1-desc">
             Browse through our diverse range of meticulously crafted garments,
-            designed to bring out your individualtiy and cater to your sense of
-            style
+            designed to bring out your individuality and cater to your sense of
+            style.
           </p>
-          <button>
-            <a href="">Shop Now</a>
-          </button>
+          <button>Shop Now</button>
+
+          {/* Bagian testimonial */}
           <div className="con-testi-section-1">
+            {/* Testimoni - International Brands */}
             <div className="brands">
               <p className="testi-section-1-title">200+</p>
+              <p className="testi-section-1-desc">International Brands</p>
             </div>
+
+            {/* Garis pemisah */}
             <div className="testi-separator"></div>
+
+            {/* Testimoni - High-Quality Products */}
             <div className="products">
-              <p className="testi-section-1-title">2.000+</p>
+              <p className="testi-section-1-title">2,000+</p>
               <p className="testi-section-1-desc">High-Quality Products</p>
             </div>
+
+            {/* Garis pemisah */}
             <div className="testi-separator"></div>
-            <div className="costumers">
+
+            {/* Testimoni - Happy Customers */}
+            <div className="products">
               <p className="testi-section-1-title">30,000+</p>
-              <p className="Happy Costumers"></p>
+              <p className="testi-section-1-desc">Happy Customers</p>
             </div>
           </div>
+          {/* Akhir testimonial */}
         </div>
+        {/* Akhir kiri section-1 */}
+
+        {/* Bagian kanan section-1 */}
+        <div className="right-section-1">
+          {/* Hiasan bintang */}
+          <img src={starVector} alt="" className="star star-top-left" />
+          <img src={starVector} alt="" className="star star-bottom-right" />
+        </div>
+        {/* Akhir kanan section-1 */}
       </div>
-      {/* brands */}
-      <div className="brands">
-        <div className="brands-container">
-          <div className="brand-logo">VERSACE</div>
-          <div className="brand-logo">ZARA</div>
-          <div className="brand-logo">GUCCI</div>
-          <div className="brand-logo">PRADA</div>
-          <div className="brand-logo">Calvin Klein</div>
-        </div>
+
+      {/* body end */}
+
+      <div className="banner-brand">
+        <p>VERSACE</p>
+        <p>ERIGO</p>
+        <p>ZARA</p>
+        <p>GUCCI</p>
+        <p>Calvin Clein</p>
       </div>
     </>
   );
