@@ -1,114 +1,169 @@
+#root {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Inter", "Helvetica", sans-serif;
+p {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #333;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 80px;
-  background-color: #ffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  background: #ffff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
-.left {
+nav .wrapper-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 90px;
+}
+
+.nav-left {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 48;
 }
 
-.left p {
-  font-size: 26px;
-  font-weight: 900;
-  color: #000000;
-}
-
-.left ul {
+.nav-right {
   display: flex;
-  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.nav-links ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.nav-links li {
   list-style: none;
 }
 
-.left ul li a {
+.nav-links li a {
+  list-style: none;
   text-decoration: none;
-  color: #606060;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.left ul li a:hover {
-  color: #000000;
-}
-
-.right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  color: #333;
 }
 
 .search-bar {
   display: flex;
   align-items: center;
-  background-color: #f0f0f0;
-  border-radius: 30px;
-  padding: 15px 16px;
-  width: 600px;
+  justify-content: space-between;
+  gap: 2px;
+  padding: 8px 20px;
+  width: 500px;
 }
 
-.search-bar svg {
-  color: #000000;
-  margin: 0 16px 0 16px;
+.con-search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+  padding: 8px 20px;
 }
 
-.search-bar input {
+.search-input {
   border: none;
   background: transparent;
   outline: none;
-  width: 100%;
   font-size: 14px;
-  color: #606060;
+  width: 100%;
 }
 
 .auth-content {
   display: flex;
   align-items: center;
-  gap: 24px;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-.auth-content svg {
-  color: #000000;
+.signup-banner {
+  background: #000;
+  color: #fff;
+  padding: 5px 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+  font-size: 14px;
+}
+
+.con-left-signup-banner {
+  width: 10px;
+}
+
+.con-signup-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.banner-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 16px;
   cursor: pointer;
 }
 
-/* body styling */
-
-.container {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  background-color: #f2f0f1;
-  display: flex;
-  min-height: 100vh;
-  overflow: hidden;
+.signup-banner a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.container img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  z-index: 1; /* Places the image behind other content */
+/* body styling ( section-1 )*/
+
+.section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f0f1;
+  z-index: 0;
+}
+
+.left-section-1 {
+  width: 50%;
+  padding: 0px 0px 0px 90px;
+}
+
+.left-section-1 h1 {
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.section-1-desc {
+  font-size: 16px;
+}
+
+.left-section-1 button {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 65px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 /* You can add your content div here */
