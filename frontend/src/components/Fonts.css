@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'Satoshi-Light';
+  src: url('../fonts/Satoshi-Light.woff2') format('woff2'),
+       url('../fonts/Satoshi-Light.woff') format('woff'),
+       url('../fonts/Satoshi-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-LightItalic';
+  src: url('../fonts/Satoshi-LightItalic.woff2') format('woff2'),
+       url('../fonts/Satoshi-LightItalic.woff') format('woff'),
+       url('../fonts/Satoshi-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('../fonts/Satoshi-Regular.woff') format('woff'),
+       url('../fonts/Satoshi-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-Italic';
+  src: url('../fonts/Satoshi-Italic.woff2') format('woff2'),
+       url('../fonts/Satoshi-Italic.woff') format('woff'),
+       url('../fonts/Satoshi-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+       url('../fonts/Satoshi-Medium.woff') format('woff'),
+       url('../fonts/Satoshi-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-MediumItalic';
+  src: url('../fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+       url('../fonts/Satoshi-MediumItalic.woff') format('woff'),
+       url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('../fonts/Satoshi-Bold.woff') format('woff'),
+       url('../fonts/Satoshi-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-BoldItalic';
+  src: url('../fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+       url('../fonts/Satoshi-BoldItalic.woff') format('woff'),
+       url('../fonts/Satoshi-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('../fonts/Satoshi-Black.woff2') format('woff2'),
+       url('../fonts/Satoshi-Black.woff') format('woff'),
+       url('../fonts/Satoshi-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-BlackItalic';
+  src: url('../fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+       url('../fonts/Satoshi-BlackItalic.woff') format('woff'),
+       url('../fonts/Satoshi-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IntegralCF-MediumItalic';
+  src: url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFMediumItalic.eot');
+  src: local('FONTSPRING DEMO - Integral CF Medium Italic'), local('FONTSPRINGDEMO-IntegralCFMediumItalic'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFMediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFMediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IntegralCF-BoldItalic';
+  src: url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFBoldItalic.eot');
+  src: local('FONTSPRING DEMO - Integral CF Bold Italic'), local('FONTSPRINGDEMO-IntegralCFBoldItalic'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IntegralCF-Demi-BoldItalic';
+  src: url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFDemiBoldItalic.eot');
+  src: local('FONTSPRING DEMO - Integral CF Demi Bold Italic'), local('FONTSPRINGDEMO-IntegralCFDemiBoldItalic'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFDemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFDemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IntegralCF-Italic';
+  src: url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFItalic.eot');
+  src: local('FONTSPRING DEMO - Integral CF Italic'), local('FONTSPRINGDEMO-IntegralCFItalic'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IntegralCF-Extra-BoldItalic';
+  src: url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFExtraBoldItalic.eot');
+  src: local('FONTSPRING DEMO - Integral CF Extra Bold Italic'), local('FONTSPRINGDEMO-IntegralCFExtraBoldItalic'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFExtraBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IntegralCF-Heavy-Regular';
+  src: url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFHeavyRegular.eot');
+  src: local('FONTSPRING DEMO - Integral CF Heavy Regular'), local('FONTSPRINGDEMO-IntegralCFHeavyRegular'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFHeavyRegular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFHeavyRegular.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IntegralCF-Demi-BoldRegular';
+  src: url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFDemiBoldRegular.eot');
+  src: local('FONTSPRING DEMO - Integral CF Demi Bold Regular'), local('FONTSPRINGDEMO-IntegralCFDemiBoldRegular'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFDemiBoldRegular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFDemiBoldRegular.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IntegralCF-Regular';
+  src: url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFRegular.eot');
+  src: local('FONTSPRING DEMO - Integral CF Regular'), local('FONTSPRINGDEMO-IntegralCFRegular'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFRegular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IntegralCF-Extra-BoldRegular';
+  src: url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFExtraBoldRegular.eot');
+  src: local('FONTSPRING DEMO - Integral CF Extra Bold Regular'), local('FONTSPRINGDEMO-IntegralCFExtraBoldRegular'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFExtraBoldRegular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFExtraBoldRegular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IntegralCF-Heavy-Italic';
+  src: url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFHeavyItalic.eot');
+  src: local('FONTSPRING DEMO - Integral CF Heavy Italic'), local('FONTSPRINGDEMO-IntegralCFHeavyItalic'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFHeavyItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFHeavyItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IntegralCF-Medium-Regular';
+  src: url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFMediumRegular.eot');
+  src: local('FONTSPRING DEMO - Integral CF Medium Regular'), local('FONTSPRINGDEMO-IntegralCFMediumRegular'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFMediumRegular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFMediumRegular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IntegralCF-BoldRegular';
+  src: url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFBoldRegular.eot');
+  src: local('FONTSPRING DEMO - Integral CF Bold Regular'), local('FONTSPRINGDEMO-IntegralCFBoldRegular'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFBoldRegular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/hinted-FONTSPRINGDEMO-IntegralCFBoldRegular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bodoni Twelve ITC Bold";
+  src: url("https://db.onlinewebfonts.com/t/1364ab4d5e0a6aa7351128d471cee629.eot");
+  src: url("https://db.onlinewebfonts.com/t/1364ab4d5e0a6aa7351128d471cee629.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/1364ab4d5e0a6aa7351128d471cee629.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/1364ab4d5e0a6aa7351128d471cee629.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/1364ab4d5e0a6aa7351128d471cee629.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/1364ab4d5e0a6aa7351128d471cee629.svg#Bodoni Twelve ITC Bold")format("svg");
+}
