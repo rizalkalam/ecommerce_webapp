@@ -7,6 +7,17 @@ import preview from './assets/preview.png';
 import { Icon } from '@iconify/react';
 import { useState } from 'react';
 
+import na1 from './assets/na-1.png';
+import na2 from './assets/na-2.1.png';
+import na3 from './assets/na-3.png';
+import na4 from './assets/na-4.png';
+
+import ts1 from './assets/ts1.png';
+import ts2 from './assets/ts2.png';
+import ts3 from './assets/ts3.png';
+import ts4 from './assets/ts4.png';
+
+
 export default function App() {
   const [showBanner, setShowBanner] = useState(true);
 
@@ -86,7 +97,227 @@ export default function App() {
         <p>ZARA</p>
         <p>GUCCI</p>
         <p>PRADA</p>
-        <p>Calivn Clein</p>
+        <p>Calvin Clein</p>
+      </div>
+
+      <div className="new-arrivals">
+        <p className="sec-title">NEW ARRIVALS</p>
+        <div className="content-product">
+          <div className="card">
+            <div className="card-img">
+              <img src={na1} alt="" />
+            </div>
+            <div className="card-txt">
+              <p className="card-title">T-shirt with Tape Details</p>
+              <div className="rating">
+                <div className="star-rating">
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star-half" width="20" height="20" style={{ color: "#FFD700" }} />
+                </div>
+                <p>4.5/<span style={{ color: "#888888" }}>5</span></p>
+              </div>
+              <div className="price">
+                <p className="new-price">$120</p>
+                {/* <p className="old-price">$260</p>
+                <div className="discount">
+                  <p className="txt-discount">-20%</p>
+                </div> */}
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-img">
+              <img src={na2} alt="" />
+            </div>
+            <div className="card-txt">
+              <p className="card-title">Skinny Fit Jeans</p>
+              <div className="rating">
+                <div className="star-rating">
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star-half" width="20" height="20" style={{ color: "#FFD700" }} />
+                </div>
+                <p>3.5/<span style={{ color: "#888888" }}>5</span></p>
+              </div>
+              <div className="price">
+                <p className="new-price">$240</p>
+                <p className="old-price">$260</p>
+                <div className="discount">
+                  <p className="txt-discount">-20%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-img">
+              <img src={na3} alt="" />
+            </div>
+            <div className="card-txt">
+              <p className="card-title">Checkered Shirt</p>
+              <div className="rating">
+                <div className="star-rating">
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star-half" width="20" height="20" style={{ color: "#FFD700" }} />
+                </div>
+                <p>4.5/<span style={{ color: "#888888" }}>5</span></p>
+              </div>
+              <div className="price">
+                <p className="new-price">$180</p>
+                {/* <p className="old-price">$260</p>
+                <div className="discount">
+                  <p className="txt-discount">-20%</p>
+                </div> */}
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-img">
+              <img src={na4} alt="" />
+            </div>
+            <div className="card-txt">
+              <p className="card-title">Sleeve Striped T-shirt</p>
+              <div className="rating">
+                <div className="star-rating">
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star-half" width="20" height="20" style={{ color: "#FFD700" }} />
+                </div>
+                <p>4.5/<span style={{ color: "#888888" }}>5</span></p>
+              </div>
+              <div className="price">
+                <p className="new-price">$130</p>
+                <p className="old-price">$160</p>
+                <div className="discount">
+                  <p className="txt-discount">-30%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="btn-viewall">
+          <p>View All</p>
+        </div>
+      </div>
+
+      <div className="section-separator"></div>
+
+      <div className="top-selling">
+        <p className="sec-title">TOP SELLING</p>
+        <div className="content-product">
+          <div className="card">
+            <div className="card-img">
+              <img src={ts1} alt="" />
+            </div>
+            <div className="card-txt">
+              <p className="card-title">Vertical Striped Shirt</p>
+              <div className="rating">
+                <div className="star-rating">
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star-half" width="20" height="20" style={{ color: "#FFD700" }} />
+                </div>
+                <p>4.5/<span style={{ color: "#888888" }}>5</span></p>
+              </div>
+              <div className="price">
+                <p className="new-price">$240</p>
+                <p className="old-price">$260</p>
+                <div className="discount">
+                  <p className="txt-discount">-20%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-img">
+              <img src={ts2} alt="" />
+            </div>
+            <div className="card-txt">
+              <p className="card-title">Courage Graphic T-shirt</p>
+              <div className="rating">
+                <div className="star-rating">
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star-half" width="20" height="20" style={{ color: "#FFD700" }} />
+                </div>
+                <p>4.5/<span style={{ color: "#888888" }}>5</span></p>
+              </div>
+              <div className="price">
+                <p className="new-price">$240</p>
+                <p className="old-price">$260</p>
+                <div className="discount">
+                  <p className="txt-discount">-20%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-img">
+              <img src={ts3} alt="" />
+            </div>
+            <div className="card-txt">
+              <p className="card-title">Loose Fit Bermuda Shorts</p>
+              <div className="rating">
+                <div className="star-rating">
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star-half" width="20" height="20" style={{ color: "#FFD700" }} />
+                </div>
+                <p>4.5/<span style={{ color: "#888888" }}>5</span></p>
+              </div>
+              <div className="price">
+                <p className="new-price">$240</p>
+                <p className="old-price">$260</p>
+                <div className="discount">
+                  <p className="txt-discount">-20%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-img">
+              <img src={ts4} alt="" />
+            </div>
+            <div className="card-txt">
+              <p className="card-title">Faded Skinny Jeans</p>
+              <div className="rating">
+                <div className="star-rating">
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star" width="20" height="20" style={{ color: "#FFD700" }} />
+                  <Icon icon="ic:round-star-half" width="20" height="20" style={{ color: "#FFD700" }} />
+                </div>
+                <p>4.5/<span style={{ color: "#888888" }}>5</span></p>
+              </div>
+              <div className="price">
+                <p className="new-price">$240</p>
+                <p className="old-price">$260</p>
+                <div className="discount">
+                  <p className="txt-discount">-20%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="btn-viewall">
+          <p>View All</p>
+        </div>
       </div>
     </>
   );

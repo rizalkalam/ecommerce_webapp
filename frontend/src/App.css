@@ -211,7 +211,7 @@ nav .wrapper-nav{
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 430px;
+  top: 400px;
   left: 55%;
 }
 
@@ -219,7 +219,7 @@ nav .wrapper-nav{
   position: absolute;
   width: 90px;
   height: 90px;
-  bottom: 535px;
+  bottom: 465px;
   right: 5%;
 }
 
@@ -242,3 +242,144 @@ nav .wrapper-nav{
   padding-top: 24px; */
 }
 /* banner-brand */
+
+
+/* section new arrivals */
+.sec-title{
+  font-size: 38px;
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+  padding: 40px 0px;
+  margin-top: 20px;
+}
+
+.content-product{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 20px;
+ max-width: 1240px;
+ margin: 0 auto;
+ justify-content: center;
+}
+
+.card{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.card-img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: #F0EEED;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+.card-txt{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-title{
+  font-size: 22px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.rating{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rating p{
+  color: #000;
+  font-size: 14px;
+}
+.star-rating {
+  display: flex;
+  gap: 4px;
+}
+
+.price{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.new-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333333;
+}
+.old-price {
+  font-size: 22px;
+  color: #888888;
+  text-decoration: line-through;
+}
+.discount{
+  color: #FF3333;
+  background-color: rgba(255, 51, 51, 0.1);
+  padding: 4px 10px;
+  border-radius: 8px;
+  
+}
+.txt-discount{
+  font-size: 12px;
+  font-weight: 600;
+  color: #FF3333;
+}
+
+.btn-viewall{
+  max-width: 200px;
+  max-height: 52px;
+  border: 1px solid #c0c0c0;
+  background: #fff;
+  color: #000;
+  padding: 12px 20px;
+  border-radius: 32px;
+  margin: 40px auto 70px auto;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.btn-viewall:hover{
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.btn-viewall p{
+  font-size: 16px;
+  font-weight: 600;
+  color: inherit;
+  text-align: center;
+}
+/* section new arrivals */
+
+.section-separator{
+  width: 90%;
+  height: 1px;  
+  background: #e0e0e0; 
+  margin: 0 auto;
+}
+
+/* section top selling */
+
+/* section top selling */
