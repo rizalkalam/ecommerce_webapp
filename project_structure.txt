@@ -1,15 +1,21 @@
 ecommerce_webapp/
-├── frontend/                # React frontend application
-│   ├── public/              # Static files
-│   ├── src/                 # Source files
-│   │   ├── assets/          # Images, fonts, etc.
-│   │   ├── components/      # Reusable components
-│   │   ├── pages/           # Page components
-│   │   ├── services/        # API services
-│   │   ├── store/           # Redux store
-│   │   ├── utils/           # Utility functions
-│   │   ├── App.js           # Main App component
-│   │   └── index.js         # Entry point
-│   └── package.json         # Frontend dependencies
-├── backend/                 # Backend application (TBD)
-└── README.md                # Project documentation
+├── frontend/                       # React frontend application
+│   ├── public/                     # Static files
+│   ├── src/                        # Source files
+│   │   ├── assets/                 # Images, fonts, etc.
+│   │   ├── components/             # Reusable components
+│   │   │   ├── Banner.jsx          # Banner components
+│   │   │   ├── BrandBanner.jsx     # Banner components
+│   │   │   ├── Fonts.css           # Banner components
+│   │   │   ├── HeroSection.jsx     # Banner components
+│   │   │   └── Navbar.jsx          # Banner components
+│   │   ├── pages/                  # Page components
+│   │   ├── services/               # API services
+│   │   ├── store/                  # Redux store
+│   │   ├── utils/                  # Utility functions
+│   │   ├── App.jsx                 # Main App component
+│   │   ├── App.css                 # All components CSS-Style 
+│   │   └── index.js                # Entry point
+│   └── package.json                # Frontend dependencies
+├── backend/                        # Backend application (TBD)
+└── README.md                       # Project documentation
