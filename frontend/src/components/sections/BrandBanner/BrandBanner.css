@@ -1,0 +1,14 @@
+/* banner-brand */
+.banner-brand{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 90px;
+    background-color: #000;
+    width: 100%;
+  }
+  
+  .banner-brand p{
+    color: #fff;
+  }
+  /* banner-brand */

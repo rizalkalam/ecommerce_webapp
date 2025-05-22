@@ -1,15 +1,23 @@
 ecommerce_webapp/
 ├── frontend/                # React frontend application
-│   ├── public/              # Static files
-│   ├── src/                 # Source files
-│   │   ├── assets/          # Images, fonts, etc.
-│   │   ├── components/      # Reusable components
-│   │   ├── pages/           # Page components
-│   │   ├── services/        # API services
-│   │   ├── store/           # Redux store
-│   │   ├── utils/           # Utility functions
-│   │   ├── App.js           # Main App component
-│   │   └── index.js         # Entry point
+│   ├── public/              # Static files (favicon, index.html, dll)
+│   ├── src/                 # Source files (kode utama aplikasi)
+│   │   ├── assets/          # Images, fonts, dll.
+│   │   ├── components/      # Komponen yang dapat digunakan ulang (Navbar, Footer, dsb)
+│   │   ├── pages/           # Komponen halaman utama (HomePage, dsb)
+│   │   ├── services/        # API services (fungsi untuk komunikasi dengan backend)
+│   │   ├── store/           # Redux store (state management)
+│   │   ├── utils/           # Utility functions (fungsi pembantu)
+│   │   ├── App.jsx          # Komponen utama, mengatur struktur dan routing aplikasi
+│   │   ├── App.css          # Styling global untuk seluruh aplikasi
+│   │   └── main.jsx         # Entry point React, mounting App ke DOM
 │   └── package.json         # Frontend dependencies
 ├── backend/                 # Backend application (TBD)
 └── README.md                # Project documentation
+
+# Penjelasan Inisiasi Komponen & Page
+- Buat komponen di folder src/components jika elemen UI tersebut akan digunakan ulang di beberapa tempat (misal: Navbar, Footer, Card, dsb).
+- Buat page di folder src/pages untuk setiap halaman utama aplikasi (misal: HomePage, ProductPage, CartPage, dsb). Page biasanya mewakili satu route.
+- Jika ada fitur besar atau section yang kompleks, buat folder baru di dalam components atau pages untuk mengelompokkan file terkait.
+- Selalu mulai dari membuat komponen kecil yang reusable, lalu susun menjadi komponen lebih besar atau page.
+- Dokumentasikan setiap komponen/page secara singkat di awal file agar memudahkan kolaborasi.

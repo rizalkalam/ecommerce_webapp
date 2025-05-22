@@ -1,0 +1,35 @@
+.signup-banner {
+  background: #000;
+  color: #fff;
+  padding: 5px 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+  font-size: 14px;
+}
+
+.con-left-signup-banner {
+  width: 10px; 
+}
+
+.con-signup-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px; 
+}
+
+.banner-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.signup-banner a {
+  color: #fff;
+}
